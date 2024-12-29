@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Quicksand&display=swap');
+
+html,
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #16213E;
+  color: white;
+}
+
+.ff-jose {
+  font-family: 'Jost', sans-serif;
+}
+
+.font-big {
+  font-family: 'Jost', sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.bg-dark {
+  background-color: #1A1A2E !important;
+}
+
+.bg-blue {
+  background-color: #0F3460;
+}
+
+.text-red {
+  color: #E94560;
+}
+
+.text-black {
+  color: #1A1A2E;
+}
+
+.active {
+  color: #E94560 !important;
+  background-color: #1A1A2E !important;
+  font-weight: 600;
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottomTechnology {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+}
+
+.slide-in-top {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInTop;
+}
+
+.slide-in-bottom {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInBottom;
+}
+
+/* ===================== Transition ===================== */
+
+.animate-charcter {
+  background-image: linear-gradient(-225deg, #ffffff, #E94560, #E94560, #ffffff);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ===================== Home ===================== */
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+/* ===================== Skills ===================== */
+.mw-fc {
+  max-width: fit-content;
+}
+
+/* ===================== Resume ===================== */
+li::marker {
+  color: #E94560;
+  font-size: 2em;
+}
+
+.blue-label {
+  background-color: #0F3460;
+  width: max-content;
+}
+
+.zoom-on-hover:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+/* ===================== Portfolio ===================== */
+
+.portfolio-link:hover {
+  background-color: #E94560;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+/* CVDOWNLOADBTN */
+.cv_download {
+  display: inline-block;
+  padding: 0.45em 1em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  /* color: #ffffff; */
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+  position: relative;
+}
+
+.cv_download:hover {
+  background-color: white;
+  color: #000000;
+}
+
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
+  }
+
+  40% {
+    top: 0em;
+  }
+
+  43% {
+    top: -0.9em;
+  }
+
+  46% {
+    top: 0em;
+  }
+
+  48% {
+    top: -0.4em;
+  }
+
+  50% {
+    top: 0em;
+  }
+
+  100% {
+    top: 0em;
+  }
+}
+
+hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(78, 74, 84, 0.8);
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
