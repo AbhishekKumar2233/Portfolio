@@ -119,7 +119,7 @@ export const _projectsDetails = [
         tech: "HTML/CSS/REACT/Bootstrap/talwind/Firebase",
         image: "chatapp (1)",
         imageType: ".png",
-        url: "https://csb-kmbhk5.netlify.app/",
+        url: "https://chat-app-abhishekkumar2233s-projects.vercel.app/signin",
         github: "https://github.com/AbhishekKumar2233/Chat-App"
 
     },
@@ -127,7 +127,7 @@ export const _projectsDetails = [
     {
         id: '1',
         title: "Box Office React App",
-        tech: "'React/Css/Javascript/Firebase",
+        tech: "'React/Css/Javascript/Material-ui",
         image: "boxoffice",
         imageType: ".png",
         url: "https://xlp6jz.csb.app/",

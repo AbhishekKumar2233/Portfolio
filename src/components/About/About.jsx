@@ -17,7 +17,7 @@ const About = () => {
                 I'm currently serving as a React.js developer at Ideahelix Inc.
 
                 <p className='slide-in-bottom'>
-                  I am a passionate Front-End Developer, a self-directed learner, and a collaborative team player with 1.6 years of experience in web development.
+                  I am a passionate Front-End Developer, a self-directed learner, and a collaborative team player with 2.6 years of experience in web development.
                 </p>
 
                 <p className='slide-in-bottom'>
